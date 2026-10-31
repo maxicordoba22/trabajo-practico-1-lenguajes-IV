@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f5;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 24px;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e7e8eb;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2328;
+  margin: 0 0 28px;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7d9dd;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #1f2328;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.error {
+  color: #d64545;
+  font-size: 13px;
+  min-height: 16px;
+  margin: -8px 0 14px;
+}
+
+.btn-abrir {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-abrir:hover {
+  background: #1d4fd1;
+}
+
+.resultado {
+  margin-top: 24px;
+}
+
+.resultado.oculto {
+  display: none;
+}
+
+#texto-reflejo {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mapa-contenedor {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e7e8eb;
+}
+
+.enlace-maps {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.enlace-maps:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubicación - Visualizar en Google Maps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="card">
+    <h1>Ubicación</h1>
+
+    <form id="form-ubicacion" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre Ubicación</label>
+        <input type="text" id="nombre" placeholder="Nombre Ubicacion" />
+      </div>
+
+      <div class="campo">
+        <label for="latitud">Latitud</label>
+        <input type="text" id="latitud" placeholder="28,3537921" inputmode="decimal" />
+      </div>
+
+      <div class="campo">
+        <label for="longitud">Longitud</label>
+        <input type="text" id="longitud" placeholder="-81,5618197" inputmode="decimal" />
+      </div>
+
+      <p class="error" id="mensaje-error"></p>
+
+      <button type="submit" class="btn-abrir">Abrir Ubicación</button>
+    </form>
+
+    <section id="resultado" class="resultado oculto">
+      <p id="texto-reflejo"></p>
+
+      <div class="mapa-contenedor">
+        <iframe
+          id="mapa"
+          src=""
+          width="100%"
+          height="280"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <a id="enlace-maps" class="enlace-maps" href="#" target="_blank" rel="noopener">
+        Abrir en Google Maps (pestaña nueva) ↗
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
